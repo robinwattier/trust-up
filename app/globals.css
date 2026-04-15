@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-yellow: #FFC200;
+  --color-steel: #334155;
+  --color-charcoal: #0f172a;
+  --color-glass: rgba(255, 255, 255, 0.03);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+  --color-brand-glow: rgba(255,194,0, 0.15);
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 font-sans antialiased selection:bg-brand-yellow/30;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-glass border border-glass-border backdrop-blur-md rounded-2xl;
+  }
+  
+  .glass-input {
+    @apply bg-slate-900/50 border border-slate-800 rounded-xl px-4 py-3 focus:outline-none focus:border-brand-yellow/50 focus:ring-1 focus:ring-brand-yellow/50 transition-all;
+  }
+
+  .bento-card {
+    @apply relative overflow-hidden bg-glass border border-glass-border backdrop-blur-md rounded-2xl p-6 h-full transition-all duration-500 hover:border-brand-yellow/30 hover:shadow-[0_0_30px_rgba(255,194,0,0.1)];
+  }
+
+  .btn-primary {
+    @apply bg-brand-yellow text-slate-950 px-8 py-4 rounded-xl font-bold tracking-tight shadow-[0_0_20px_rgba(255,194,0,0.4)] hover:shadow-[0_0_40px_rgba(255,194,0,0.6)] transition-all active:scale-95 flex items-center gap-2;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-800 rounded-full hover:bg-slate-700 transition-colors;
+}
+
+/* Animations */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes gradient-x {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+.animate-gradient-x {
+  animation: gradient-x 3s ease infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+.animate-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+.animate-shimmer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.05),
+    transparent
+  );
+  animation: shimmer 2s infinite;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
