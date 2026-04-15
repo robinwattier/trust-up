@@ -22,7 +22,7 @@ export const FeatureBento = () => {
           </div>
           <div className="flex-1 relative min-h-[300px] mb-6 rounded-xl overflow-hidden border border-white/5 bg-slate-900/50">
             <Image 
-              src="/assets/thought-trace.png" 
+              src="/trust-up/assets/thought-trace.png" 
               alt="Reasoning Visualization" 
               fill 
               className="object-cover opacity-80"
@@ -49,7 +49,7 @@ export const FeatureBento = () => {
             </div>
             <div className="relative w-32 h-32 rounded-lg overflow-hidden border border-white/10 shrink-0">
                <Image 
-                src="/assets/specs.png" 
+                src="/trust-up/assets/specs.png" 
                 alt="Technical Specs Visualization" 
                 fill 
                 className="object-cover"

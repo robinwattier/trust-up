@@ -23,6 +23,9 @@ const helvetica = localFont({
 export const metadata: Metadata = {
   title: "TrustUp Smart-Bati | Agent Estimateur AI-Native",
   description: "Solution intelligente d'estimation technique pour les artisans TrustUp.",
+  icons: {
+    icon: "/trust-up/assets/icon-trustup-white-yellow-1.png",
+  },
 };
 
 export default function RootLayout({

@@ -65,7 +65,7 @@ export default function LandingPage() {
       {/* Dynamic Background with Hero Image */}
       <div className="fixed inset-0 pointer-events-none -z-10 bg-slate-950">
         <Image 
-          src="/assets/hero-bg.png" 
+          src="/trust-up/assets/hero-bg.png" 
           alt="Hero Background" 
           fill 
           className="object-cover opacity-20"
@@ -77,7 +77,7 @@ export default function LandingPage() {
       <nav className="fixed top-0 w-full h-20 px-8 flex items-center justify-between z-50 backdrop-blur-sm border-b border-white/5">
         <div className="flex items-center gap-3">
           <div className="relative w-8 h-8">
-            <Image src="/assets/icon-trustup-white-yellow-1.png" alt="TrustUp Logo" fill className="object-contain" />
+            <Image src="/trust-up/assets/icon-trustup-white-yellow-1.png" alt="TrustUp Logo" fill className="object-contain" />
           </div>
           <span className="text-lg font-bold tracking-tighter font-[family-name:var(--font-helvetica)] uppercase">TRUST UP <span className="text-brand-yellow font-sans">SMART-BATI</span></span>
         </div>
@@ -99,7 +99,7 @@ export default function LandingPage() {
       <section ref={heroRef} className="relative pt-40 pb-20 px-6 flex flex-col items-center text-center">
         <div ref={logoRef} className="w-24 h-24 mb-10 relative">
           <div className="absolute inset-0 bg-brand-yellow blur-[40px] opacity-20 animate-pulse" />
-          <Image src="/assets/icon-trustup-white-yellow-1.png" alt="Logo TrustUp" fill className="object-contain relative z-10" />
+          <Image src="/trust-up/assets/icon-trustup-white-yellow-1.png" alt="Logo TrustUp" fill className="object-contain relative z-10" />
         </div>
         
         <h1 className="hero-text text-5xl md:text-8xl font-black tracking-tight leading-[0.95] max-w-5xl mb-8 uppercase text-balance">
@@ -176,7 +176,7 @@ export default function LandingPage() {
       <footer className="py-20 border-t border-white/5 px-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex items-center gap-3 grayscale opacity-60">
-             <Image src="/assets/icon-trustup-white-yellow-1.png" alt="Logo" width={24} height={24} />
+             <Image src="/trust-up/assets/icon-trustup-white-yellow-1.png" alt="Logo" width={24} height={24} />
              <span className="text-sm font-bold font-[family-name:var(--font-helvetica)] uppercase">TRUST UP</span>
           </div>
           

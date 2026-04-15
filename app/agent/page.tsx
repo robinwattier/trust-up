@@ -70,7 +70,7 @@ export default function AgentPage() {
           <div className="w-px h-6 bg-white/10 mx-2" />
           <div className="w-10 h-10 relative flex items-center justify-center">
             <div className="absolute inset-0 bg-brand-yellow blur-[15px] opacity-20 animate-pulse" />
-            <Image src="/assets/icon-trustup-white-yellow-1.png" alt="Logo" fill className="object-contain relative z-10" />
+            <Image src="/trust-up/assets/icon-trustup-white-yellow-1.png" alt="Logo" fill className="object-contain relative z-10" />
           </div>
           <div>
             <h1 className="text-xl font-bold text-white leading-tight tracking-tight font-[family-name:var(--font-helvetica)] uppercase">
